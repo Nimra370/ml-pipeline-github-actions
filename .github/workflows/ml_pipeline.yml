@@ -33,8 +33,9 @@ jobs:
         mkdir -p model
         python src/train.py
 
-    - name: Upload trained model artifact
-      uses: actions/upload-artifact@v3
-      with:
-        name: trained-model
-        path: model/model.pkl
+- name: Upload trained model artifact
+  uses: actions/upload-artifact@v3.1.3
+  with:
+    name: trained-model
+    path: model/model.pkl
+
