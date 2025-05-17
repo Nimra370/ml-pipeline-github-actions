@@ -34,7 +34,7 @@ jobs:
           python src/train.py
 
       - name: Upload trained model artifact
-        uses: actions/upload-artifact@8ac76f0abfa839ab48193f2b3d89a479f5dee4d0
+        uses: actions/upload-artifact@v3
         with:
           name: trained-model
           path: model/model.pkl
